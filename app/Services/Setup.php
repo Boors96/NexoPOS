@@ -192,7 +192,7 @@ class Setup
         DotenvEditor::setKey( 'NS_SOCKET_PORT', 6001 );
         DotenvEditor::setKey( 'NS_SOCKET_DOMAIN', $domain[ 'basename' ] );
         DotenvEditor::setKey( 'NS_SOCKET_ENABLED', 'false' );
-        DotenvEditor::setKey( 'NS_ENV', 'production' );
+        DotenvEditor::setKey( 'NS_ENV', 'dev' );
         DotenvEditor::save();
 
         /**

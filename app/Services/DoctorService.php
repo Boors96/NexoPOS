@@ -130,7 +130,7 @@ class DoctorService
 
         if ( ! env( 'SANCTUM_STATEFUL_DOMAINS', false ) ) {
             DotenvEditor::load();
-            DotenvEditor::setKey( 'SANCTUM_STATEFUL_DOMAINS', collect([ $domain, 'localhost', '127.0.0.1' ])->unique()->join(',') );
+            DotenvEditor::setKey( 'SANCTUM_STATEFUL_DOMAINS', collect([ $domain, 'nexopos.test' ])->unique()->join(',') );
             DotenvEditor::save();
         }
     }
